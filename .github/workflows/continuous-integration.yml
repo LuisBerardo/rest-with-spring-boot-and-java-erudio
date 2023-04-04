@@ -29,7 +29,6 @@ jobs:
       run: mvn clean package -DskipTests
 
     - name: Docker Compose Build
-      working-directory: ${GITHUB_WORKSPACE}
       run: docker compose build
 
     - name: Push to Docker Hub Container Registry
